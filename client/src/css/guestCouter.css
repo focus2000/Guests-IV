@@ -1,0 +1,24 @@
+table {
+    border-collapse:collapse;
+    width:100%;
+    text-transform:capitalize;
+    color:var(--primary-color);
+    font-size:bold
+}
+
+td , th{
+    text-align:center;
+    padding:0.7rem 1.6rem
+}
+
+th {
+    text-align:left;
+}
+
+tr:nth-child(odd) {
+    background-color:var(--light-color)
+}
+
+td {
+    transition:all 0.3s ease 0s
+}
