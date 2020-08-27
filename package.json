@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "server": "nodemon server"
+    "build":"npm install --prefix client",
+    "install-client":"cd client && npm install",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client npm run build --prefix client",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm start\" \"npm run client\"",
+    "server": "nodemon server",
+    "dev:dev":"concurrently \npm run server\" \"npm run client\""
   },
   "author": "kenneth Nwachukwu",
   "license": "ISC",
