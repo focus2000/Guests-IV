@@ -1,6 +1,12 @@
 {
   "name": "meeting-iv",
   "version": "1.0.0",
+   "engines": {
+    "node": "12.18.3",
+    "yarn":"1.22.5",
+    "npm":"6.14.6"
+  },
+  
   "description": "",
   "main": "server.js",
   "scripts": {
